@@ -25,9 +25,19 @@ namespace LineComparision_Day8
         }
         public void MeasuretheLength()
         {
-            MeasureLineLength line = new MeasureLineLength(1);
-            double lengthofLine = Math.Sqrt(Math.Pow((line.x2 - line.x1), 2) + Math.Pow((line.y2 - line.y1), 2));
-            Console.WriteLine("Length of Line is : " + lengthofLine);
+            MeasureLineLength line1 = new MeasureLineLength(1);
+            MeasureLineLength line2 = new MeasureLineLength(2);
+            double lengthofLine1 = Math.Sqrt(Math.Pow((line1.x2 - line1.x1), 2) + Math.Pow((line1.y2 - line1.y1), 2));
+            double lengthofLine2 = Math.Sqrt(Math.Pow((line2.x2 - line2.x1), 2) + Math.Pow((line2.y2 - line2.y1), 2));
+
+            if (lengthofLine2 == lengthofLine1)
+            {
+                Console.WriteLine("Both lines are Equal or Identical");
+            }
+            else
+            {
+                Console.WriteLine("Both lines are not Identical");
+            }
         }
     }
 }
