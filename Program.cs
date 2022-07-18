@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Line Comparision Program ");
+            MeasureLineLength measureLineLength = new MeasureLineLength(0);
+            measureLineLength.MeasuretheLength();
         }
     }
 }
